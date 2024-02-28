@@ -4,7 +4,14 @@ const Items = (props) => {
   return (
     <ul>
       {props.data.map((item) => (
-        <li key={item.id}>{item.artist}</li>
+        <li
+          style={{
+            color: "red",
+          }}
+          key={item.id}
+        >
+          {item.artist}
+        </li>
       ))}
     </ul>
   );
